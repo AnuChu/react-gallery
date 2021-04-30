@@ -2,7 +2,7 @@
 
 <p align="center"><b>| The simple react-gallery |</b></p>
 
-<p align="center"><img src="https://i.ibb.co/X3JhWWJ/gallary-1.png" alt="gallery"/></p>
+<p align="center"><img src="https://i.ibb.co/k3H1NBr/gallary-1.png" alt="gallery"/></p>
 <h2>Install</h2>
 
 How to start
