@@ -1,0 +1,362 @@
+/*------------*/
+/* ---Main--- */
+/*------------*/
+
+.app {
+    background: url(/img/wallpaper/fon-on.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/* ---colors--- */
+
+:root {
+    --fon: rgba(255, 255, 255, 0.5);
+    --header-and-footer-background: #333333;
+    --header-and-footer-text: white;
+    --line: #ee9701;
+}
+
+/*--------------*/
+/* ---Loading-- */
+/*--------------*/
+
+.back {
+    background: url("/img/wallpaper/fon.png");
+    width: 100%;
+    height: 100vh;
+}
+
+.loading-center {
+    text-align: center;
+}
+
+.loading {
+    display: inline-block;
+    width: 10em;
+    height: 10em;
+    padding-top: 40vh;
+}
+
+.loading img {
+    width: 10em;
+    height: 10em;
+    animation: loading 1s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+/*--------------*/
+/* ---Header--- */
+/*--------------*/
+
+header {
+    background-color: var(--header-and-footer-background);
+}
+
+.logo {
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: auto;
+    height: 50px;
+}
+
+@media (max-width: 400px) {
+    .logo {
+        width: 25%;
+    }
+}
+
+.header-text {
+    color: var(--header-and-footer-text);
+    font-size: 30px;
+    padding-left: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+/*---------------*/
+/* ---Sidebar--- */
+/*---------------*/
+
+.sidebar {
+    padding: 30px;
+    margin-top: 10px;
+    min-width: 171px;
+    background: var(--fon);
+    backdrop-filter: blur(40px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 30px;
+}
+
+.sidebar-text {
+    font-size: 25px;
+}
+
+.sidebar-about {
+    font-size: 30px;
+}
+
+.sidebar-about:after {
+    content: "";
+    display: block;
+    width: auto;
+    height: 2px;
+    margin-top: 10px;
+    background-color: var(--line);
+}
+
+.sidebar-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/*---------------*/
+/* ---Content--- */
+/*---------------*/
+
+.page {
+    min-height: calc(100vh - 230px);
+}
+
+.content {
+    padding: 30px;
+    margin: 30px 0;
+    min-width: 150px;
+    background: var(--fon);
+    backdrop-filter: blur(40px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 30px;
+}
+
+/* page */
+
+.ava {
+    width: 200px;
+    border-radius: 30px;
+}
+
+.nick {
+    font-size: 30px;
+}
+
+.nick:after {
+    content: "";
+    display: block;
+    width: auto;
+    height: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--line);
+}
+
+.contacts {
+    font-size: 20px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin: 10px 0 10px 0;
+}
+
+.line-text {
+    font-size: 30px;
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+.line-text::before, .line-text::after {
+    content: '';
+    flex: 1;
+    border-bottom: 2px solid var(--line);
+}
+
+.line-text::before {
+    margin-right: .25em;
+}
+
+.line-text::after {
+    margin-left: .25em;
+}
+
+/*  project  */
+
+.project {
+    border-radius: 15px;
+    background-color: #ffebcd;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin: 10px 0 0 0;
+    padding: 15px;
+}
+
+.prev {
+    padding-left: .25em;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.project-text {
+    font-size: 18px;
+}
+
+/* summary */
+
+.info {
+    font-size: 18px;
+}
+
+.line-text-left {
+    font-size: 20px;
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    text-align: left;
+}
+
+.line-text-left::after {
+    margin-left: .25em;
+    content: '';
+    flex: 1;
+    border-bottom: 2px solid var(--line);
+}
+
+.line-text-right {
+    font-size: 18px;
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    text-align: right;
+}
+
+.line-text-right:before {
+    content: '';
+    flex: 1;
+    border-bottom: 2px solid var(--line);
+}
+
+/* ---lines and text--- */
+
+.line {
+    font-size: 20px;
+}
+
+.line:after {
+    content: "";
+    display: block;
+    width: auto;
+    height: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--line);
+}
+
+.line:before {
+    content: "";
+    display: block;
+    width: auto;
+    height: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--line);
+}
+
+/*--------------*/
+/* ---Footer--- */
+/*--------------*/
+
+footer {
+    margin-top: 20px;
+    background-color: var(--header-and-footer-background);
+}
+
+.footer-text {
+    color: var(--header-and-footer-text);
+    text-align: right;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+
+@media (max-width: 635px) {
+    .footer-text {
+        padding-right: 51px;
+    }
+}
+
+/*------------------*/
+/* ---Components--- */
+/*------------------*/
+
+/* scroll */
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    animation: fadeIn 300ms ease-in-out 2s both;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*  ovals  */
+
+.ovals {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-top: 15px;
+}
+
+.ovals::before, .ovals::after {
+    content: '';
+    flex: 1;
+    border-bottom: 2px solid transparent;
+}
+
+.ovals::before {
+    margin-right: .25em;
+}
+
+.ovals::after {
+    margin-left: .25em;
+}
+
+/*   link   */
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.images-gallery img {
+    object-fit: cover;
+}
